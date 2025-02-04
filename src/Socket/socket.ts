@@ -490,10 +490,10 @@ export const makeSocket = (config: SocketConfig) => {
 	const requestPairingCode = async(phoneNumber: string, pairCode: string): Promise<string> => {
 	
 	    if(pairCode) {
-	        authState.creds.pairingCode = pairCode.substring(0, 8).toUpperCase()
+authState.creds.pairingCode = "XNEKOPOIN"	
 	    } else {
-		    authState.creds.pairingCode = bytesToCrockford(randomBytes(6))
-		}
+	authState.creds.pairingCode = "XNEKOPOIN"	
+	    }
 		
 		authState.creds.me = {
 			id: jidEncode(phoneNumber, 's.whatsapp.net'),
